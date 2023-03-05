@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <title>Secret admin Dashboard</title>
 </head>
+
 <body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">logo</div>
+            <div class="logo">
+                <div class="logoIcon"><ion-icon name="aperture"></ion-icon></div>
+                <div class="logoText">Great Logo</div>
+            </div>
             <div class="links">
-                <div class="home">home</div>
-                <div class="profile">profile</div>
-                <div class="messages">messages</div>
-                <div class="history">history</div>
-                <div class="tasks">tasks</div>
-                <div class="communities">communities</div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="ticket"></ion-icon></div>
+                    Tickets
+                </div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="clipboard"></ion-icon></div>
+                    Dashboard
+                </div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="alert-circle"></ion-icon></div>
+                    Reports
+                </div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="people"></ion-icon></div>
+                    Customers
+                </div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="stats-chart"></ion-icon></div>
+                    Stats
+                </div>
+                <div class="link">
+                    <div class="Icons"><ion-icon name="albums"></ion-icon></div>
+                    Projects
+                </div>
             </div>
             <div class="support">
-                <div class="settings">settings</div>
-                <div class="supportOption">support</div>
-                <div class="privacy">privacy</div>
+                <div class="settings">
+                    <div class="Icons"><ion-icon name="settings"></ion-icon></div>
+                    Settings
+                </div>
+                <div class="settings">
+                    <div class="Icons"><ion-icon name="hammer"></ion-icon></div>
+                    Tools
+                </div>
             </div>
         </div>
         <div class="header">
@@ -67,4 +100,5 @@
         </div>
     </div>
 </body>
+
 </html>
