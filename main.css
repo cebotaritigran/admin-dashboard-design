@@ -1,6 +1,4 @@
-* {
-    font-family: 'Golos Text', sans-serif;
-}
+* {}
 
 body {
     margin: 0;
@@ -25,16 +23,117 @@ body {
 
 .searchBar {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(1, 50px) repeat(1, 5fr) repeat(1, 100px) repeat(1, 100px)repeat(1, 1fr);
+    align-items: center;
+}
+
+.topSection {
+    margin-right: 80px;
+}
+
+.searchIcon {
+    font-size: 28px;
+    justify-self: start;
+}
+
+.searchIcon:hover {
+    transform: scale(1.2);
+}
+
+.notificationIcon {
+    margin-right: 20px;
+    font-size: 28px;
+    justify-self: end;
+}
+
+.notificationIcon:hover {
+    transform: scale(1.2);
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-self: center;
+    background-image: url(background-01.jpg);
+    background-size: cover;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.userName {
+    justify-self: end;
+}
+
+.userName:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+input[type="search"] {
+    width: 100%;
+    height: 28px;
+    margin-bottom: 10px;
+    background-color: rgb(232, 229, 229);
+    border-radius: 20px;
+    outline: 1px solid silver;
+    border: none;
+    padding-left: 10px;
+}
+
+input[type="search"]:focus {
+    outline: 1px solid blue;
+    box-shadow: 2px 2px 2px rgb(202, 202, 204);
+}
+
+input[type="search"]:hover {
+    border: 1px solid rgb(178, 178, 229);
 }
 
 .optionsBar {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 50px) repeat(1, 5fr) repeat(3, 1fr);
+    padding: 20px;
+    gap: 10px;
+}
+
+.optionsBar .profile {
+    justify-self: start;
+}
+
+.bottomSection {
+    justify-self: start;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.buttons {
+    justify-self: end;
+}
+
+button {
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #4597e8;
+    color: white;
+    border-radius: 40px;
+    width: 100px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(54, 41, 41);
 }
 
 /* SIDEBAR */
 .sidebar {
+
     display: grid;
     height: 100vh;
     grid-template-rows: repeat(1, 100px) repeat(1, 1fr) repeat(1, 130px);
@@ -44,19 +143,29 @@ body {
     justify-items: start;
     top: 0;
     left: 0;
-    background-color: #334155;
+    background-color: #1e293b;
 }
 
-@media only screen and (max-width: 600px){
-    .header{
+@media only screen and (max-width: 600px) {
+    .header {
         grid-column: 1/3;
     }
-    .container{
-       grid-template-rows: 1fr;
-       grid-template-columns: 1fr;
+
+    .container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
+    }
+
+    .searchBar {
+        grid-template-columns: repeat(1, 1fr) repeat(1, 4fr) repeat(3, 1fr);
+    }
+
+    .topSection {
+        margin-right: 0;
     }
 }
 
@@ -71,6 +180,7 @@ body {
 }
 
 .logoText {
+    font-family: 'Golos Text', sans-serif;
     justify-self: start;
     align-self: center;
     color: #f1f5f9;
@@ -110,16 +220,16 @@ body {
 
 .icons {
     margin-top: 5px;
-    color: #94a3b8;
+    color: #627084;
     font-size: 20px;
 }
 
-.link:hover .icons{
+.link:hover .icons {
     color: white;
 }
 
-.link:hover{
-    background-color:#475569 ;
+.link:hover {
+    background-color: #475569;
     cursor: pointer;
     color: white;
 }
@@ -143,15 +253,15 @@ body {
     grid-template-columns: repeat(2, 50px);
     justify-items: start;
     align-items: center;
-    color: #64748b;
+    color: #94a3b8;
 }
 
-.settings:hover .icons{
+.settings:hover .icons {
     color: white;
 }
 
-.settings:hover{
-    background-color:#475569;
+.settings:hover {
+    background-color: #475569;
     color: white;
     cursor: pointer;
 }
