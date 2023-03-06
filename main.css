@@ -1,4 +1,6 @@
-* {}
+* {
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     margin: 0;
@@ -169,7 +171,10 @@ button:hover {
     .topSection {
         margin-right: 0;
     }
+
+
 }
+
 
 /* LOGO */
 .logo {
@@ -274,11 +279,36 @@ button:hover {
     height: 100%;
     background-color: #e2e8f0;
     display: grid;
-    grid-template-columns: repeat(1, 4fr) repeat(1, 1fr);
-    grid-template-rows: repeat(1, 40px) repeat(3, 200px);
+    grid-template-columns: repeat(1, 3fr) repeat(1, 1fr);
+    grid-template-rows: repeat(1, 40px) repeat(3, 1fr);
     box-shadow: inset 0px 3px 4px rgb(212, 211, 211);
     padding: 20px;
     gap: 20px;
+}
+
+.announcements{
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-rows:5fr 1fr 5fr 1fr 5fr;
+    padding: 20px;
+}
+
+.announcement{
+    padding-left: 15px;
+}
+
+.rowBoard{
+    border-top: 1px solid rgb(213, 207, 207);
+}
+
+.announcementTitle{
+    font-weight: 600;
+}
+
+.announcementText{
+    color: rgb(115, 115, 115);
 }
 
 .projectTitle {
@@ -288,22 +318,51 @@ button:hover {
     letter-spacing: 1px;
 }
 
+.trendingGrid{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-row: 3 / 5;
+}
+
 .trendingTitle {
+
     height: 20px;
 }
 
-.trendings {}
+.trendings{
+    height: 70%;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    padding: 10px;
+}
+
+.users{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.userProfile{
+    justify-self: start;
+    font-size: 15px;
+    display: grid;
+    gap: 8px;
+}
 
 .projects {
     grid-row: 2/5;
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 .project {
-    height: 200px;
+    height: 30vh;
     width: 100%;
     background: linear-gradient(
         to right,
@@ -319,12 +378,10 @@ button:hover {
     align-items: center;
 }
 
-
-
 .ticketAbout{
     display: grid;
     padding: 20px;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr) repeat(1,2fr);
     justify-items: start;
     align-items: center;
 }
@@ -335,7 +392,7 @@ button:hover {
 }
 
 .ticketButtons{
-    padding: 20px;
+    padding-right: 20px ;
     justify-self: end;
     display: grid;
     grid-template-columns: repeat(3,1fr);
